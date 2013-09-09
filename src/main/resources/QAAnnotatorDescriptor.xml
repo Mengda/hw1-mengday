@@ -2,17 +2,17 @@
 
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
-  <primitive>true</primitive>  <annotatorImplementationName>edu.cmu.hw1_mengday.GoldAnswerScoreAnnotator</annotatorImplementationName>
+  <primitive>true</primitive>  <annotatorImplementationName>QAAnnotator</annotatorImplementationName>
   <analysisEngineMetaData>
-    <name>GoldAnswerScoreAnnotatorDescriptor</name>
-    <description>Returns the given answer.</description>
+    <name>QAAnnotatorDescriptor</name>
+    <description/>
     <version>1.0</version>
     <vendor/>
     <configurationParameters/>
     <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>
-        <import location="typeSystemDescriptor.xml"/>
+        <import name="hw1-mengday-typesystem"/>
       </imports>
     </typeSystemDescription>
     <typePriorities/>
@@ -21,7 +21,8 @@
       <capability>
         <inputs/>
         <outputs>
-          <type allAnnotatorFeatures="true">edu.cmu.hw1_mengday.GoldAnswerScore</type>
+          <type allAnnotatorFeatures="true">Question</type>
+          <type allAnnotatorFeatures="true">Answer</type>
         </outputs>
         <languagesSupported/>
       </capability>

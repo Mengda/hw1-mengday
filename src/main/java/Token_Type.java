@@ -1,6 +1,5 @@
 
-/* First created by JCasGen Sun Sep 08 20:14:28 EDT 2013 */
-package edu.cmu.hw1_mengday;
+/* First created by JCasGen Sun Sep 08 22:51:54 EDT 2013 */
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
@@ -9,12 +8,14 @@ import org.apache.uima.cas.impl.FSGenerator;
 import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
+import org.apache.uima.cas.impl.FeatureImpl;
+import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** Returns the given answer.
- * Updated by JCasGen Sun Sep 08 20:23:51 EDT 2013
+/** 
+ * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
  * @generated */
-public class GoldAnswerScore_Type extends Annotation_Type {
+public class Token_Type extends GeneralElement_Type {
   /** @generated */
   @Override
   protected FSGenerator getFSGenerator() {return fsGenerator;}
@@ -22,31 +23,31 @@ public class GoldAnswerScore_Type extends Annotation_Type {
   private final FSGenerator fsGenerator = 
     new FSGenerator() {
       public FeatureStructure createFS(int addr, CASImpl cas) {
-  			 if (GoldAnswerScore_Type.this.useExistingInstance) {
+  			 if (Token_Type.this.useExistingInstance) {
   			   // Return eq fs instance if already created
-  		     FeatureStructure fs = GoldAnswerScore_Type.this.jcas.getJfsFromCaddr(addr);
+  		     FeatureStructure fs = Token_Type.this.jcas.getJfsFromCaddr(addr);
   		     if (null == fs) {
-  		       fs = new GoldAnswerScore(addr, GoldAnswerScore_Type.this);
-  			   GoldAnswerScore_Type.this.jcas.putJfsFromCaddr(addr, fs);
+  		       fs = new Token(addr, Token_Type.this);
+  			   Token_Type.this.jcas.putJfsFromCaddr(addr, fs);
   			   return fs;
   		     }
   		     return fs;
-        } else return new GoldAnswerScore(addr, GoldAnswerScore_Type.this);
+        } else return new Token(addr, Token_Type.this);
   	  }
     };
   /** @generated */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = GoldAnswerScore.typeIndexID;
+  public final static int typeIndexID = Token.typeIndexID;
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.hw1_mengday.GoldAnswerScore");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("Token");
 
 
 
   /** initialize variables to correspond with Cas Type and Features
 	* @generated */
-  public GoldAnswerScore_Type(JCas jcas, Type casType) {
+  public Token_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
