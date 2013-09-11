@@ -95,4 +95,8 @@
       <version>2.4.0</version>
     </dependency>
   </dependencies>
+  <scm>
+  	<connection>scm:git:git@github.com:Mengda/hw1-mengday.git</connection>
+  	<developerConnection>scm:git:git@github.com:Mengda/hw1-mengday.git</developerConnection>
+  </scm>
 </project>
