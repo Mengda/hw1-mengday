@@ -12,6 +12,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 /** 
  * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
  * XML source: D:/Eclipse_Workspace/hw1-mengday/src/main/resources/hw1-mengday-typesystem.xml
+ * 
+ * A class for other types to inherit from. Provides some basic features like in which annotator an annotation is generated, and a feature indicates the confidence of an annotation. 
  * @generated */
 public class GeneralElement extends Annotation {
   /** @generated
@@ -65,6 +67,7 @@ public class GeneralElement extends Annotation {
   //* Feature: confidence
 
   /** getter for confidence - gets 
+   * Feature: confidence indicates the confidence of an annotation given by the annotator.
    * @generated */
   public double getConfidence() {
     if (GeneralElement_Type.featOkTst && ((GeneralElement_Type)jcasType).casFeat_confidence == null)
@@ -83,6 +86,7 @@ public class GeneralElement extends Annotation {
   //* Feature: casProcessorID
 
   /** getter for casProcessorID - gets 
+   * Feature: casProcessorID indicates in which class an annotation is generated.
    * @generated */
   public String getCasProcessorID() {
     if (GeneralElement_Type.featOkTst && ((GeneralElement_Type)jcasType).casFeat_casProcessorID == null)

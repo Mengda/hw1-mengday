@@ -12,6 +12,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 /** 
  * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
  * XML source: D:/Eclipse_Workspace/hw1-mengday/src/main/resources/hw1-mengday-typesystem.xml
+ * 
+ * Annotates the answer sentence along with a score, which indicates the judgement of the system.
  * @generated */
 public class AnswerScore extends GeneralElement {
   /** @generated
@@ -63,6 +65,7 @@ public class AnswerScore extends GeneralElement {
   //* Feature: score
 
   /** getter for score - gets 
+   * Feature: score means the score given by the whole system.
    * @generated */
   public double getScore() {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_score == null)
@@ -81,6 +84,7 @@ public class AnswerScore extends GeneralElement {
   //* Feature: answer
 
   /** getter for answer - gets 
+   * Feature: answer means to which answer sentence the score is attached to.
    * @generated */
   public Answer getAnswer() {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_answer == null)

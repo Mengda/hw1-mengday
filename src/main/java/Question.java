@@ -12,6 +12,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 /** 
  * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
  * XML source: D:/Eclipse_Workspace/hw1-mengday/src/main/resources/hw1-mengday-typesystem.xml
+ * 
+ * Annotation for a question sentence.
  * @generated */
 public class Question extends GeneralElement {
   /** @generated

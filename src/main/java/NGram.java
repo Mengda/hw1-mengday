@@ -13,6 +13,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 /** 
  * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
  * XML source: D:/Eclipse_Workspace/hw1-mengday/src/main/resources/hw1-mengday-typesystem.xml
+ * 
+ * Annotation of N-grams. N can be any number.
  * @generated */
 public class NGram extends GeneralElement {
   /** @generated
@@ -64,6 +66,7 @@ public class NGram extends GeneralElement {
   //* Feature: elements
 
   /** getter for elements - gets 
+   * Feature: elements is an array consists of type Token. elements indicates the Token's in this NGram annotation.
    * @generated */
   public FSArray getElements() {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)

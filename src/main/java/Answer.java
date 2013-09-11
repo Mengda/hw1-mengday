@@ -12,6 +12,8 @@ import org.apache.uima.jcas.tcas.Annotation;
 /** 
  * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
  * XML source: D:/Eclipse_Workspace/hw1-mengday/src/main/resources/hw1-mengday-typesystem.xml
+ * 
+ * Annotates the answer sentence.
  * @generated */
 public class Answer extends GeneralElement {
   /** @generated
@@ -63,6 +65,7 @@ public class Answer extends GeneralElement {
   //* Feature: isCorrect
 
   /** getter for isCorrect - gets 
+   * Feature:isCorrect means whether this answer is a correct answer judged by the input file.
    * @generated */
   public boolean getIsCorrect() {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
