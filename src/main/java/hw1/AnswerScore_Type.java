@@ -1,5 +1,6 @@
 
-/* First created by JCasGen Sun Sep 08 22:51:54 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 15:54:31 EDT 2013 */
+package hw1;
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
@@ -10,10 +11,9 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
-import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
+ * Updated by JCasGen Wed Sep 11 15:54:31 EDT 2013
  * @generated */
 public class AnswerScore_Type extends GeneralElement_Type {
   /** @generated */
@@ -41,10 +41,8 @@ public class AnswerScore_Type extends GeneralElement_Type {
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("AnswerScore");
-
-
-
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("hw1.AnswerScore");
+ 
   /** @generated */
   final Feature casFeat_score;
   /** @generated */
@@ -52,13 +50,13 @@ public class AnswerScore_Type extends GeneralElement_Type {
   /** @generated */ 
   public double getScore(int addr) {
         if (featOkTst && casFeat_score == null)
-      jcas.throwFeatMissing("score", "AnswerScore");
+      jcas.throwFeatMissing("score", "hw1.AnswerScore");
     return ll_cas.ll_getDoubleValue(addr, casFeatCode_score);
   }
   /** @generated */    
   public void setScore(int addr, double v) {
         if (featOkTst && casFeat_score == null)
-      jcas.throwFeatMissing("score", "AnswerScore");
+      jcas.throwFeatMissing("score", "hw1.AnswerScore");
     ll_cas.ll_setDoubleValue(addr, casFeatCode_score, v);}
     
   
@@ -70,13 +68,13 @@ public class AnswerScore_Type extends GeneralElement_Type {
   /** @generated */ 
   public int getAnswer(int addr) {
         if (featOkTst && casFeat_answer == null)
-      jcas.throwFeatMissing("answer", "AnswerScore");
+      jcas.throwFeatMissing("answer", "hw1.AnswerScore");
     return ll_cas.ll_getRefValue(addr, casFeatCode_answer);
   }
   /** @generated */    
   public void setAnswer(int addr, int v) {
         if (featOkTst && casFeat_answer == null)
-      jcas.throwFeatMissing("answer", "AnswerScore");
+      jcas.throwFeatMissing("answer", "hw1.AnswerScore");
     ll_cas.ll_setRefValue(addr, casFeatCode_answer, v);}
     
   
@@ -94,7 +92,7 @@ public class AnswerScore_Type extends GeneralElement_Type {
     casFeatCode_score  = (null == casFeat_score) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_score).getCode();
 
  
-    casFeat_answer = jcas.getRequiredFeatureDE(casType, "answer", "Answer", featOkTst);
+    casFeat_answer = jcas.getRequiredFeatureDE(casType, "answer", "hw1.Answer", featOkTst);
     casFeatCode_answer  = (null == casFeat_answer) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_answer).getCode();
 
   }

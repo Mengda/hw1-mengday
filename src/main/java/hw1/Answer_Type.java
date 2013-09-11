@@ -1,5 +1,6 @@
 
-/* First created by JCasGen Sun Sep 08 22:51:54 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 15:54:31 EDT 2013 */
+package hw1;
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
@@ -10,10 +11,9 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
-import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
+ * Updated by JCasGen Wed Sep 11 15:54:31 EDT 2013
  * @generated */
 public class Answer_Type extends GeneralElement_Type {
   /** @generated */
@@ -41,10 +41,8 @@ public class Answer_Type extends GeneralElement_Type {
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("Answer");
-
-
-
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("hw1.Answer");
+ 
   /** @generated */
   final Feature casFeat_isCorrect;
   /** @generated */
@@ -52,13 +50,13 @@ public class Answer_Type extends GeneralElement_Type {
   /** @generated */ 
   public boolean getIsCorrect(int addr) {
         if (featOkTst && casFeat_isCorrect == null)
-      jcas.throwFeatMissing("isCorrect", "Answer");
+      jcas.throwFeatMissing("isCorrect", "hw1.Answer");
     return ll_cas.ll_getBooleanValue(addr, casFeatCode_isCorrect);
   }
   /** @generated */    
   public void setIsCorrect(int addr, boolean v) {
         if (featOkTst && casFeat_isCorrect == null)
-      jcas.throwFeatMissing("isCorrect", "Answer");
+      jcas.throwFeatMissing("isCorrect", "hw1.Answer");
     ll_cas.ll_setBooleanValue(addr, casFeatCode_isCorrect, v);}
     
   

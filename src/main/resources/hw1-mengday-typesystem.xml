@@ -7,9 +7,9 @@
     <vendor/>
   <types>
     <typeDescription>
-      <name>Answer</name>
+      <name>hw1.Answer</name>
       <description/>
-      <supertypeName>GeneralElement</supertypeName>
+      <supertypeName>hw1.GeneralElement</supertypeName>
       <features>
         <featureDescription>
           <name>isCorrect</name>
@@ -19,9 +19,9 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>AnswerScore</name>
+      <name>hw1.AnswerScore</name>
       <description/>
-      <supertypeName>GeneralElement</supertypeName>
+      <supertypeName>hw1.GeneralElement</supertypeName>
       <features>
         <featureDescription>
           <name>score</name>
@@ -31,35 +31,35 @@
         <featureDescription>
           <name>answer</name>
           <description/>
-          <rangeTypeName>Answer</rangeTypeName>
+          <rangeTypeName>hw1.Answer</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
-      <name>NGram</name>
+      <name>hw1.NGram</name>
       <description/>
-      <supertypeName>GeneralElement</supertypeName>
+      <supertypeName>hw1.GeneralElement</supertypeName>
       <features>
         <featureDescription>
           <name>elements</name>
           <description/>
           <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-          <elementType>Token</elementType>
+          <elementType>hw1.Token</elementType>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
-      <name>Question</name>
+      <name>hw1.Question</name>
       <description/>
-      <supertypeName>GeneralElement</supertypeName>
+      <supertypeName>hw1.GeneralElement</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>Token</name>
+      <name>hw1.Token</name>
       <description/>
-      <supertypeName>GeneralElement</supertypeName>
+      <supertypeName>hw1.GeneralElement</supertypeName>
     </typeDescription>
     <typeDescription>
-      <name>GeneralElement</name>
+      <name>hw1.GeneralElement</name>
       <description/>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>

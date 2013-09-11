@@ -1,19 +1,17 @@
 
 
-/* First created by JCasGen Sun Sep 08 22:51:54 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 15:54:01 EDT 2013 */
+package hw1;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
+ * Updated by JCasGen Wed Sep 11 15:54:31 EDT 2013
  * XML source: D:/Eclipse_Workspace/hw1-mengday/src/main/resources/hw1-mengday-typesystem.xml
- * 
- * Annotation of a token. The definition of a token is the same as that in the Stanford nlp toolkit.
  * @generated */
 public class Token extends GeneralElement {
   /** @generated

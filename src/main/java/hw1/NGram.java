@@ -1,20 +1,18 @@
 
 
-/* First created by JCasGen Sun Sep 08 22:51:54 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 15:54:31 EDT 2013 */
+package hw1;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 import org.apache.uima.jcas.cas.FSArray;
-import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
+ * Updated by JCasGen Wed Sep 11 15:54:31 EDT 2013
  * XML source: D:/Eclipse_Workspace/hw1-mengday/src/main/resources/hw1-mengday-typesystem.xml
- * 
- * Annotation of N-grams. N can be any number.
  * @generated */
 public class NGram extends GeneralElement {
   /** @generated
@@ -62,29 +60,30 @@ public class NGram extends GeneralElement {
   @generated modifiable */
   private void readObject() {/*default - does nothing empty block */}
      
+ 
+    
   //*--------------*
   //* Feature: elements
 
   /** getter for elements - gets 
-   * Feature: elements is an array consists of type Token. elements indicates the Token's in this NGram annotation.
    * @generated */
   public FSArray getElements() {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "NGram");
+      jcasType.jcas.throwFeatMissing("elements", "hw1.NGram");
     return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements)));}
     
   /** setter for elements - sets  
    * @generated */
   public void setElements(FSArray v) {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "NGram");
+      jcasType.jcas.throwFeatMissing("elements", "hw1.NGram");
     jcasType.ll_cas.ll_setRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements, jcasType.ll_cas.ll_getFSRef(v));}    
     
   /** indexed getter for elements - gets an indexed value - 
    * @generated */
   public Token getElements(int i) {
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "NGram");
+      jcasType.jcas.throwFeatMissing("elements", "hw1.NGram");
     jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements), i);
     return (Token)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements), i)));}
 
@@ -92,7 +91,7 @@ public class NGram extends GeneralElement {
    * @generated */
   public void setElements(int i, Token v) { 
     if (NGram_Type.featOkTst && ((NGram_Type)jcasType).casFeat_elements == null)
-      jcasType.jcas.throwFeatMissing("elements", "NGram");
+      jcasType.jcas.throwFeatMissing("elements", "hw1.NGram");
     jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements), i);
     jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((NGram_Type)jcasType).casFeatCode_elements), i, jcasType.ll_cas.ll_getFSRef(v));}
   }

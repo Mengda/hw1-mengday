@@ -1,19 +1,17 @@
 
 
-/* First created by JCasGen Sun Sep 08 22:51:54 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 15:54:31 EDT 2013 */
+package hw1;
 
 import org.apache.uima.jcas.JCas; 
 import org.apache.uima.jcas.JCasRegistry;
 import org.apache.uima.jcas.cas.TOP_Type;
 
-import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** 
- * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
+ * Updated by JCasGen Wed Sep 11 15:54:31 EDT 2013
  * XML source: D:/Eclipse_Workspace/hw1-mengday/src/main/resources/hw1-mengday-typesystem.xml
- * 
- * Annotates the answer sentence along with a score, which indicates the judgement of the system.
  * @generated */
 public class AnswerScore extends GeneralElement {
   /** @generated
@@ -61,22 +59,23 @@ public class AnswerScore extends GeneralElement {
   @generated modifiable */
   private void readObject() {/*default - does nothing empty block */}
      
+ 
+    
   //*--------------*
   //* Feature: score
 
   /** getter for score - gets 
-   * Feature: score means the score given by the whole system.
    * @generated */
   public double getScore() {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_score == null)
-      jcasType.jcas.throwFeatMissing("score", "AnswerScore");
+      jcasType.jcas.throwFeatMissing("score", "hw1.AnswerScore");
     return jcasType.ll_cas.ll_getDoubleValue(addr, ((AnswerScore_Type)jcasType).casFeatCode_score);}
     
   /** setter for score - sets  
    * @generated */
   public void setScore(double v) {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_score == null)
-      jcasType.jcas.throwFeatMissing("score", "AnswerScore");
+      jcasType.jcas.throwFeatMissing("score", "hw1.AnswerScore");
     jcasType.ll_cas.ll_setDoubleValue(addr, ((AnswerScore_Type)jcasType).casFeatCode_score, v);}    
    
     
@@ -84,18 +83,17 @@ public class AnswerScore extends GeneralElement {
   //* Feature: answer
 
   /** getter for answer - gets 
-   * Feature: answer means to which answer sentence the score is attached to.
    * @generated */
   public Answer getAnswer() {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_answer == null)
-      jcasType.jcas.throwFeatMissing("answer", "AnswerScore");
+      jcasType.jcas.throwFeatMissing("answer", "hw1.AnswerScore");
     return (Answer)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((AnswerScore_Type)jcasType).casFeatCode_answer)));}
     
   /** setter for answer - sets  
    * @generated */
   public void setAnswer(Answer v) {
     if (AnswerScore_Type.featOkTst && ((AnswerScore_Type)jcasType).casFeat_answer == null)
-      jcasType.jcas.throwFeatMissing("answer", "AnswerScore");
+      jcasType.jcas.throwFeatMissing("answer", "hw1.AnswerScore");
     jcasType.ll_cas.ll_setRefValue(addr, ((AnswerScore_Type)jcasType).casFeatCode_answer, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 

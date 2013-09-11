@@ -1,5 +1,6 @@
 
-/* First created by JCasGen Sun Sep 08 23:13:12 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 15:54:31 EDT 2013 */
+package hw1;
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
@@ -13,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
+ * Updated by JCasGen Wed Sep 11 15:54:31 EDT 2013
  * @generated */
 public class GeneralElement_Type extends Annotation_Type {
   /** @generated */
@@ -41,7 +42,7 @@ public class GeneralElement_Type extends Annotation_Type {
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("GeneralElement");
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("hw1.GeneralElement");
  
   /** @generated */
   final Feature casFeat_confidence;
@@ -50,13 +51,13 @@ public class GeneralElement_Type extends Annotation_Type {
   /** @generated */ 
   public double getConfidence(int addr) {
         if (featOkTst && casFeat_confidence == null)
-      jcas.throwFeatMissing("confidence", "GeneralElement");
+      jcas.throwFeatMissing("confidence", "hw1.GeneralElement");
     return ll_cas.ll_getDoubleValue(addr, casFeatCode_confidence);
   }
   /** @generated */    
   public void setConfidence(int addr, double v) {
         if (featOkTst && casFeat_confidence == null)
-      jcas.throwFeatMissing("confidence", "GeneralElement");
+      jcas.throwFeatMissing("confidence", "hw1.GeneralElement");
     ll_cas.ll_setDoubleValue(addr, casFeatCode_confidence, v);}
     
   
@@ -68,13 +69,13 @@ public class GeneralElement_Type extends Annotation_Type {
   /** @generated */ 
   public String getCasProcessorID(int addr) {
         if (featOkTst && casFeat_casProcessorID == null)
-      jcas.throwFeatMissing("casProcessorID", "GeneralElement");
+      jcas.throwFeatMissing("casProcessorID", "hw1.GeneralElement");
     return ll_cas.ll_getStringValue(addr, casFeatCode_casProcessorID);
   }
   /** @generated */    
   public void setCasProcessorID(int addr, String v) {
         if (featOkTst && casFeat_casProcessorID == null)
-      jcas.throwFeatMissing("casProcessorID", "GeneralElement");
+      jcas.throwFeatMissing("casProcessorID", "hw1.GeneralElement");
     ll_cas.ll_setStringValue(addr, casFeatCode_casProcessorID, v);}
     
   

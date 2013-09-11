@@ -1,5 +1,6 @@
 
-/* First created by JCasGen Sun Sep 08 22:51:54 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 15:54:31 EDT 2013 */
+package hw1;
 
 import org.apache.uima.jcas.JCas;
 import org.apache.uima.jcas.JCasRegistry;
@@ -10,10 +11,9 @@ import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
-import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** 
- * Updated by JCasGen Sun Sep 08 23:49:36 EDT 2013
+ * Updated by JCasGen Wed Sep 11 15:54:31 EDT 2013
  * @generated */
 public class NGram_Type extends GeneralElement_Type {
   /** @generated */
@@ -41,10 +41,8 @@ public class NGram_Type extends GeneralElement_Type {
   /** @generated 
      @modifiable */
   @SuppressWarnings ("hiding")
-  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("NGram");
-
-
-
+  public final static boolean featOkTst = JCasRegistry.getFeatOkTst("hw1.NGram");
+ 
   /** @generated */
   final Feature casFeat_elements;
   /** @generated */
@@ -52,29 +50,29 @@ public class NGram_Type extends GeneralElement_Type {
   /** @generated */ 
   public int getElements(int addr) {
         if (featOkTst && casFeat_elements == null)
-      jcas.throwFeatMissing("elements", "NGram");
+      jcas.throwFeatMissing("elements", "hw1.NGram");
     return ll_cas.ll_getRefValue(addr, casFeatCode_elements);
   }
   /** @generated */    
   public void setElements(int addr, int v) {
         if (featOkTst && casFeat_elements == null)
-      jcas.throwFeatMissing("elements", "NGram");
+      jcas.throwFeatMissing("elements", "hw1.NGram");
     ll_cas.ll_setRefValue(addr, casFeatCode_elements, v);}
     
    /** @generated */
   public int getElements(int addr, int i) {
         if (featOkTst && casFeat_elements == null)
-      jcas.throwFeatMissing("elements", "NGram");
+      jcas.throwFeatMissing("elements", "hw1.NGram");
     if (lowLevelTypeChecks)
       return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
-  return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
+	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
   }
    
   /** @generated */ 
   public void setElements(int addr, int i, int v) {
         if (featOkTst && casFeat_elements == null)
-      jcas.throwFeatMissing("elements", "NGram");
+      jcas.throwFeatMissing("elements", "hw1.NGram");
     if (lowLevelTypeChecks)
       ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i, v, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_elements), i);
